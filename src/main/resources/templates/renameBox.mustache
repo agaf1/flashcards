@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    {{#existsBox}}
+    <form action="/box/{{id}}/rename/now" method="post">
+            Name of box <input type="text" name="name" value="{{name}}"/>
+            <input type="submit"/>
+    </form>
+    {{/existsBox}}
+
+    {{^existsBox}}
+        <a href="/">Box not exists</a>
+    {{/existsBox}}
+
+    <li><a href = "/"> Home </a></li>
+</body>
+</html>

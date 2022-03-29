@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <ul>
+        {{#cards}}
+        <li><a href = "/box/{{id}}/card/{{id}}"> {{basicWord}} / {{translatedWord}} </a></li>
+        {{/cards}}
+        <li><a href = "/box/{{id}}/card/add"> Add new card </a></li>
+            <li><a href = "/"> Home </a></li>
+        </ul>
+</body>
+</html>

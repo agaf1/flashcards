@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/box/{{id}}/learning/check" method="post">
+    <div>Today is your <input type="text" name="dayOfLearn" value="{{dayOfLearn}}"/>th day of study.</div>
+    <div><br></div>
+    <input type="hidden" name="display" value="{{display}}"/>
+    <input type="hidden" name="boxId" value="{{id}}"/>
+    <input type="hidden" name="cardId" value="{{cardId}}"/>
+    Basic word <input type="text" name="question" value="{{question}}"/>
+    Translated word <input type="text" name="answer"/>
+    <input type="submit"/>
+    <div><br></div>
+    <li><a href = "/"> Home </a></li>
+</form>
+</body>
+</html>

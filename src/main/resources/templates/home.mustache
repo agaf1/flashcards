@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FLASHCARDS</title>
+<style>
+    .action-button{
+        padding:0 10px;
+    }
+</style>
+</head>
+<body>
+    <ul>
+    {{#boxes}}
+        <li>
+            <a style="width: 200px;display: inline-block;padding:0 10px" href = "/box/{{id}}"> {{name}} </a>
+            <a class="action-button" href = "/box/{{id}}/learning/avers"> Learning by Avers  </a>
+            <a class="action-button" href = "/box/{{id}}/learning/revers"> Learning by Revers </a>
+            <a class="action-button" href = "/box/{{id}}/confirm-delete"> Delete </a>
+            <a class="action-button" href = "/box/{{id}}/rename"> Rename </a>
+        </li>
+    {{/boxes}}
+    <li><a href = "/box/add"> Add new box </a></li>
+    </ul>/
+</body>
+</html>
